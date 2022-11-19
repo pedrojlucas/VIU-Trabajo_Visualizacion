@@ -1,0 +1,110 @@
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VIU - Proyecto Visualización</title>
+<script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();
+</script>
+<style>
+    .article {
+        max-width: 700px;
+        font-family: sans-serif;
+        font-weight: 300;
+        line-height: 1.3;
+    }
+    h1 {
+        font-size:28px;
+    }
+    p {
+        margin: 40px 0px;
+    }
+    iframe[src*="datawrapper.dwcdn.net"] + img {
+        display: none;
+    }
+
+    @media print {
+        iframe[src*="datawrapper.dwcdn.net"] {
+            display: none;
+        }
+        iframe[src*="datawrapper.dwcdn.net"] + img {
+            display: block;
+            width: 100%;
+        }
+    }    
+</style>
+</head>
+<body>
+<b>Nombre:</b> Pedro José Lucas Guillén<br>
+<b>Url: </b><a href="https://js-aglreg.stackblitz.io">https://js-aglreg.stackblitz.io</a><br>
+<b>Github: </b><a href="https://github.com/pedrojlucas/VIU-Trabajo_Visualizacion">https://github.com/pedrojlucas/VIU-Trabajo_Visualizacion</a><br>
+<h1>¿Está el precio de la electricidad realmente condicionado por el del gas natural?</h1>
+
+<h2>Objetivos</h2>
+Recientemente se ha podido escuchar de manera repetitiva en todo tipo de noticiarios que los precios de la electricidad en España y en otros muchos países sobre todo de Europa están muy influenciados por el precio del gas natural y este a su vez por el crecimiento rápido que ha sufrido la demanda tras la crisis creada por el COVID-19 y por otro lado, sobre todo en Europa, por la crisis geopolítica que se ha generado con la guerra entre Rusia y Ucrania y las sanciones a la exportaciones rusas impuestas por los países europeos y sus aliados de la OTAN.<br>
+Sin embargo, Europa en los últimos años a nivel de generación eléctrica ha hecho un esfuerzo importante a nivel de implantación de tecnologías renovables como eólica o solar que deberían de haber alejado la dependencia energética de combustibles fósiles como el gas natural. Es aquí donde surge la pregunta, ¿realmente el problema es el precio del gas natural?<br>
+El trabajo lo planteamos como un análisis mediante visualización de distintos tipos de variables y parámetros del mercado energético, y va dirigido a un lector generalista aunque con ciertos conocimientos de magnitudes económicas, no tiene porqué ser un experto en mercados de la energía, por lo tanto hemos de hacer accesible la información a un nivel de comprensión adecuado para que los datos y conceptos expuestos aquí sean accesibles de forma adecuada por una persona no experta en esos mercados.<br>
+
+<h2>La distribución de consumo y demanda de gas natural</h2>
+El primer paso que nos planteamos realizar a la hora de enfrentarnos a la resolución de la cuestión que planteamos es ¿cuáles son los países que concentran la producción de gas natural? ¿qué países son los mayores consumidores? Para contestar ambas preguntas de manera simultánea elegimos un mapa cloropético que nos muestre la balanza comercial de importaciones/exportaciones de gas natural.<br> 
+
+<div class="article">
+<p>
+    <div class="datawrapper-embed">
+        <iframe title="Gas Natural: Consumidores frente a productores" aria-label="Scatter Plot" id="datawrapper-chart-L1TAw" src="https://datawrapper.dwcdn.net/LlTAw/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="342"></iframe>
+        <img src="https://datawrapper.dwcdn.net/LlTAw/full.png"/>
+    </div>
+</p>
+</div>
+
+En el mapa se distingue claramente que en Europa hay dos polos fundamentales, el productor más importante del mundo de gas natural que es Rusia y un foco de consumo muy importante que es la Unión Europea, con un consumidor que destaca sobre el resto que es Alemania.
+
+<h2>Generación eléctrica en la Unión Europea</h2>
+
+El siguiente paso que es necesario dar para nuestro análisis es ver la influencia que tiene el gas natural en la generación eléctrica dentro de los países de la UE. Para ello elegimos un gráfico de barras apiladas en las que podemos ver la tendencia temporal del total de generación eléctrica y cómo evoluciona el reparto entre tipo de generación.<br>
+
+<iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQmz75kmjUTKTjQkjUJCAf0ErdN8SnHo4xlZYm1-o6xwJb8zSu7ay-eEgiKR17oQzidWd7c5AN18jU2/pubchart?oid=598507621&format=interactive"></iframe><br>
+
+En el gráfico se puede visualizar cómo el total de generación permanece en unos valores más o menos constantes a lo largo de los años, a excepción del 2020 que hay una ligera caida debido a la bajada de actividad industrial por la pandemia por COVID-19. Lo que sí se aprecia con el paso del tiempo son tres puntos importantes: bajada de generación por combustibles fósiles, incremento de generación renovable, pero a la vez una bajada de generación nuclear también.<br>
+
+Es importante hacer notar que mientras la generación renovable tiene una gran flexibilidad en cuanto a paradas por mantenimiento en su ciclo de vida, eso no se da en la generación asociada a los combustibles fósiles y sobre todo la nuclear. Si una central se decide parar no hay una forma rápida de volverla a poner en servicio si hiciera falta en ciertas circunstancias, por eso toda la generación nuclear que ha ido desapareciendo a lo largo de estos últimos años tal y como se aprecia en la gráfica no es posible recuperarla de forma rápida y tiene que ser sustituida por generación derivada de combustibles fósiles como el gas natural, lo que incrementa la dependencia de estos combustibles en el caso de que la generación renovable no sea suficiente. Eso es otro aspecto a resaltar de la gráfica, y es que a pesar de los avances realizados en la UE, la generación renovable dista mucho de poder suministrar todas las necesidades energéticas en términos de generación eléctrica de la UE.<br>
+
+<div class="article">
+    <p>
+        <div class="datawrapper-embed">
+            <iframe title="Top 10 Países Emisiones CO2" aria-label="Gráfica de barras" id="datawrapper-chart-9pijQ" src="https://datawrapper.dwcdn.net/LuL2W/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="612"></iframe>
+            <img src="https://datawrapper.dwcdn.net/LuL2W/full.png"/>
+        </div>
+    </p>
+    </div>
+
+Este esquema de producción eléctrica se reproduce con bastante parecido en el caso de España tal y como se muestra en el siguiente gráfico de barras. El gráfico de barras elegido resalta que la segunda mayor fuente de generación eléctrica en España durante 2021 fue aquella que provenía del uso de gas natural en ciclos combinados y cogeneraciones.<br>
+
+<h2>Evolución de precios</h2>
+
+Por último nos queda realizar un análisis pormenorizado entre los precios del gas natural y el de la electricidad, para ello lo mejor es un gráfico de líneas en el que es sencillo ver la evolución temporal de forma comparada de ambos precios. Para poder ver con la resolución suficiente la evolución de ambos precios es necesario utilizar dos ejes verticales.<br>
+En la gráfica se muestra el precio de energía eléctrica a nivel doméstico promedio para la Unión Europea y el precio de gas natural a nivel industrial para un consumidor de tipo medio.<br> 
+<iframe width="700" height="480" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQmz75kmjUTKTjQkjUJCAf0ErdN8SnHo4xlZYm1-o6xwJb8zSu7ay-eEgiKR17oQzidWd7c5AN18jU2/pubchart?oid=809236475&format=interactive"></iframe><br>
+Se puede apreciar que no existía una correlación elevada entre ambos precios hasta 2015 aproximadamente, a partir de ese momento la correlación se incrementa siendo en la actualidad bastante importante tal y como se observa en la gráfica.<br>
+Este incremento de correlación viene dado fundamentalmente por aspectos ya comentados anteriormente, el incremento en la generación renovable no está supliendo en su totalidad el decremento que se ha producido en la generación nuclear y este déficit está siendo cubierto por la generación a partir de gas natural provocando que el precio de la electricidad quede indexado al del gas natural.<br>
+
+Por último queríamos saber si la crisis geopolítica en Europa había contribuido al incremento del precio del gas natural, para ello realizamos una tendencia de toda la serie temporal del índice de precios de gas natural Henry Hub, que es como el gas natural cotiza en los mercados occidentales. Remarcamos la última parte de la serie temporal que es el período que va desde 2019 a 2022 para que nuestra audiencia centre más su atención en la zona de la serie temporal (bastante larga por otro lado) sobre la que queremos llamar la atención.<br>
+
+<div class="article">
+    <p>
+        <div class="datawrapper-embed">
+            <iframe title="Evolución de índice Henry Hub de precio de gas natural" aria-label="Gráfica de barras" id="datawrapper-chart-9pijQ" src="https://datawrapper.dwcdn.net/Iwejq/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="612"></iframe>
+            <img src="https://datawrapper.dwcdn.net/Iwejq/full.png"/>
+        </div>
+    </p>
+</div>
+
+Podemos ver en el gráfico en el área resaltada que a lo largo de 2020 se produce una caída del precio del gas natural derivado de los primeros impactos socioeconómicos de la pandemia por COVID-19, pero en los siguientes meses se produce una cambio de tendencia muy importante derivada de la reactivación económica y finalmente se vuelve a producir un incremento súbito por la invasión Rusa de Ucrania y en la actualidad el precio está volviendo a niveles previos a dicha invasión.<br>
+
+Con lo cual podemos aseverar que hay dos componentes en el incremento de precio uno estructural derivado del incremento de demanda por la recuperación económica tras la pandemia y otro que tiene que ver más con la volatilidad del mercado por la crisis geopolítica por la guerra entre Rusia y Ucrania.<br>
+
+<h2>Conclusiones</h2>
+
+Una vez repasadas las distintas vertientes de producción-demanda del gas natural así como la estructura de la generación eléctrica en Europa y las tendencias recientes de los precios de gas natural y electricidad podemos concluir:<br>
+
+- Europa ha hecho un gran esfuerzo en su transición energética y ha incrementando de manera notable su generación eléctrica renovable que podría suplir aquella que se realizaba a partir de combustibles fósiles como el gas natural. Aunque por otro lado también ha disminuido su generación eléctrica provininiente de centrales nucleares en más cantidad que el incremento de capacidad renovable realizado con lo que la diferencia ha sido necesario cubrirla con generación eléctrica a partir de gas natural.<br>
+- Ese hecho ha convertido a Europa en una zona actualmente muy dependiente de los vaivenes del mercado de gas natural y eso se ha visto reflejado en el precio de la electricidad que han de pagar los europeos.<br>
+- Desde el punto de vista estructural el precio del gas natural desde el año 2020 ha ido elevándose por la gran demanda derivada del crecimiento de la actividad económica tras la pandemia por COVID-19, la crisis geopolítica en Europa ha provocado un incremento puntual de volatilidad en el mercado de gas natural al ser Rusia el mayor productor del mundo de gas natural. Aunque es de esperar que este último incremento será transitorio y que se volverá a los valores que marca la estructura real de oferta y demanda.<br>
